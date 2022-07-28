@@ -2,8 +2,12 @@ package org.GenSpark.Entity;
 
 import javax.persistence.*;
 
+//@Entity
+//@Table(name = "tbl_computer")
 public class Computer {
 
+    //@Id
+    //@GeneratedValue(strategy = GenerationType.IDENTITY)
     private int computerID;
     private String motherBoard;
     private String OS;
@@ -92,5 +96,16 @@ public class Computer {
     }
 
     public Computer() {
+    }
+
+    public Computer(int computerID, String motherBoard, String OS, String CPU, String GPU, String RAM, String HDD, String OD) {
+        this.computerID = computerID;
+        this.motherBoard = motherBoard;
+        this.OS = OS;
+        this.CPU = CPU;
+        this.GPU = GPU;
+        this.RAM = RAM;
+        this.HDD = HDD;
+        this.OD = OD;
     }
 }

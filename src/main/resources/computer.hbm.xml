@@ -1,0 +1,18 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="org.GenSpark.Entity.Computer" table="tbl_computer">
+        <id name="computerID">
+            <generator class="assigned"/>
+        </id>
+        <property name="motherBoard"/>
+        <property name="OS"/>
+        <property name="CPU"/>
+        <property name="GPU"/>
+        <property name="RAM"/>
+        <property name="HDD"/>
+        <property name="OD"/>
+    </class>
+</hibernate-mapping>
